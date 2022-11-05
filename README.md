@@ -1,7 +1,7 @@
 # County Election Mapper
- Turns a spreadsheet into an SVG county election map using Python 3. The example is the 1968 Presidential election with Humphrey's and Nixon's votes combined. This has not been tested on Linux or Max. Please report any issues, thank you!
+ Turns a spreadsheet into an SVG county election map using Python 3. The example is the 1968 Presidential election with Humphrey's and Nixon's votes combined. This has not been tested on Linux or Max. Please report any issues, thank you! You're not required to credit me if you use this, but it's definitely appreciated! You can either link to this repo or tag @AmeliaMakesMaps on Twitter.
 
-# How to Use (Windows)
+# How to Use
 
 ## Set Up Your Input File
  You can either edit the default `input.csv` file (recommended) or create your own, but it must meet these criteria to function properly:

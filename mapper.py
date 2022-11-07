@@ -145,7 +145,7 @@ def getColor(data, county):
             if (data['SETTINGS']['Vote type'].lower() == 'raw'):
                 voteShare[c] = int(county[c]) / int(county['total'])
             elif (data['SETTINGS']['Vote type'].lower() == 'percent'):
-                voteShare[c] = int(county[c])
+                voteShare[c] = int(county[c]) / 100
 
     #Find the winner(s) and 2nd place
     winners = []

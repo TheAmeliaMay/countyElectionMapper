@@ -79,8 +79,8 @@ def readData(filename='input.csv'):
                             if (key not in fileData[section].keys()):
                                 fileData[section][key] = []
 
-                            #Add the color to the list
-                            color = [colorValue, cell]
+                            #Add the color to the list (also, remove any leading hashtags)
+                            color = [colorValue, cell.lstrip('#')]
                             fileData[section][key].append(color)
     
     #Validate the settings

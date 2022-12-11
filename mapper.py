@@ -54,8 +54,9 @@ def readData(filename='input.csv'):
                             if ('Isolate' in fileData['SETTINGS'].keys() and cell not in fileData['SETTINGS']['Isolate']):
                                 continue
 
-                            #For the counties section, the 2nd value is the state and should be added to the key
-                            key = key + ', ' + cell
+                            #For the counties section, the 2nd value is the state and should be added to the key, except DC
+                            if (cell != 'DC'):
+                                key = key + ', ' + cell
                         else:
                             fileData[section][key] = cell
                     elif (c >= 2 and key != None):
